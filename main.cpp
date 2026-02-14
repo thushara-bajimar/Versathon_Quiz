@@ -3,6 +3,41 @@
 #include<vector>
 using namespace std;
 
+void quiz(string username){
+    ifstream file("questions.txt");
+
+    string question, opt1, opt2, opt3, opt4;
+    int correct, score=0, userAns;
+
+    while(getline(file, question)){
+        getline(file, opt1);
+        getline(file, opt2);
+        getline(file, opt3);
+        getline(file, opt4);
+        file>>correct;
+
+        cout<<endl<<question<<endl;
+        cout<<"1. "<<opt1<<endl;
+        cout<<"2. "<<opt2<<endl;
+        cout<<"3. "<<opt3<<endl;
+        cout<<"4. "<<opt4<<endl;
+
+        cout<<" Your Answer: ";
+        cin>> userAns;
+
+        if(userAns == correct){
+            cout<<"Correct!!"<<endl;
+            score += 10;
+        }else{
+            cout<<"Wrong!!"<<endl;
+            score -= 2;
+        }
+    }
+    file.close();
+}
+
+void leaderboard();
+
 void menu(){
     string username;
     int choice;
@@ -22,9 +57,6 @@ void menu(){
         leaderboard();
     }
 }
-
-void quiz(string username);
-void leaderboard();
 
 int main(){
     menu();
