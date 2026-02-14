@@ -7,7 +7,7 @@ void menu(){
     string username;
     int choice;
 
-    cout<< " ***** Welcome To YOUR QUIZ PLATFORM !!! *****" << endl;
+    cout<< " ***** Welcome To YOUR QUIZ PLATFORM !!! ***** " << endl;
     cout<< "Enter your USERNAME: ";
     cin>> username;
 
