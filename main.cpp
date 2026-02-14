@@ -34,6 +34,13 @@ void quiz(string username){
         }
     }
     file.close();
+
+    cout<<"Your Final Score: "<<score<<endl;
+
+    ofstream fileScore("score.txt", ios::app);
+    fileScore<<username<<": "<<score<<endl;
+
+    fileScore.close();
 }
 
 void leaderboard();
