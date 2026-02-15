@@ -56,7 +56,19 @@ void leaderboard(){
     while(file>>username>>score){
         scores.push_back({username, score});
     }
-     file.close();
+
+    for(int i=0 ; i<scores.size() ; i++){
+        for(int j=0 ; j<scores.size()-i-1 ; j++){
+            if(scores[j].second < scores[j+1].second){
+                swap(scores[j], scores[j+1]);
+            }
+        }
+    }
+
+    for(int i=1 ; i<scores.size() ; i++){
+        cout<<i<<". "<<scores[i].first<<": "<<scores[i].second<<endl;
+    }
+    file.close();
 }
 
 void menu(){
