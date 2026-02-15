@@ -44,7 +44,20 @@ void quiz(string username){
     fileScore.close();
 }
 
-void leaderboard();
+void leaderboard(){
+    ifstream file("score.txt");
+
+    string username;
+    int score;
+
+    vector<pair<string, int>>scores;
+
+    cout<<" *** LEADERBOARD *** "<<endl;
+    while(file>>username>>score){
+        scores.push_back({username, score});
+    }
+     file.close();
+}
 
 void menu(){
     string username;
