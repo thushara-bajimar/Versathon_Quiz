@@ -41,6 +41,16 @@ void quiz(string username){
     ofstream fileScore("score.txt", ios::app);
     fileScore<<username<<": "<<score<<endl;
 
+    if(score == 10){
+        cout<<" GOLD BADGE!!"<<endl;
+    }else if(score == 8){
+        cout<<" SILVER BADGE!!"<<endl;
+    }else if(score == 6){
+        cout<<" BRONZE BADGE!!"<<endl;
+    }else{
+        cout<<" NO BADGE!"<<endl;
+    }
+    
     fileScore.close();
 }
 
