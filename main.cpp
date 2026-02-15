@@ -2,6 +2,7 @@
 #include<fstream>
 #include<vector>
 #include<algorithm>
+#include<limits>
 using namespace std;
 
 void quiz(string username){
@@ -16,6 +17,7 @@ void quiz(string username){
         getline(file, opt3);
         getline(file, opt4);
         file>>correct;
+        file.ignore(numeric_limits<streamsize>::max(), '\n');
 
         cout<<endl<<question<<endl;
         cout<<"1. "<<opt1<<endl;
@@ -39,7 +41,7 @@ void quiz(string username){
     cout<<"Your Final Score: "<<score<<endl;
 
     ofstream fileScore("score.txt", ios::app);
-    fileScore<<username<<": "<<score<<endl;
+    fileScore<<username<<" "<<score<<endl;
 
     if(score == 100){
         cout<<" GOLD BADGE!!"<<endl;
@@ -58,7 +60,8 @@ void leaderboard(){
     ifstream file("score.txt");
 
     if(!file){
-        cout<<"No Score Found!";
+        cout<<"No Score Found!"<<endl;
+        return;
     }
 
     string username;
@@ -79,8 +82,8 @@ void leaderboard(){
         }
     }
 
-    for(int i=1 ; i<scores.size() ; i++){
-        cout<<i<<". "<<scores[i].first<<": "<<scores[i].second<<endl;
+    for(int i=0 ; i<scores.size() ; i++){
+        cout<<i+1<<". "<<scores[i].first<<": "<<scores[i].second<<endl;
     }
     file.close();
 }
@@ -93,16 +96,23 @@ void menu(){
     cout<< "Enter your USERNAME: ";
     cin>> username;
 
-    cout<< "1. Start Quiz"<<endl;
-    cout<< "2. Show Leaderboard"<<endl;
-    cout<< "Enter your choice: ";
-    cin>> choice;
+    do{
+        cout<< "1. Start Quiz"<<endl;
+        cout<< "2. Show Leaderboard"<<endl;
+        cout<< "3. Exit"<<endl;
+        cout<< "Enter your choice: ";
+        cin>> choice;
 
-    if(choice == 1){
-        quiz(username);
-    }else if(choice == 2){
-        leaderboard();
-    }
+        if(choice == 1){
+            quiz(username);
+        }else if(choice == 2){
+            leaderboard();
+        }else if(choice == 3){
+            cout<<"Exiting... Thank you!"<<endl;
+        }else{
+            cout<<"Invalid!"<<endl;
+        }
+    }while(choice!=3);
 }
 
 int main(){
