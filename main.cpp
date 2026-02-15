@@ -33,7 +33,6 @@ void quiz(string username){
             score += 10;
         }else{
             cout<<"Wrong!!"<<endl;
-            score -= 2;
         }
     }
     file.close();
