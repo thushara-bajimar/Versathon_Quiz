@@ -41,11 +41,11 @@ void quiz(string username){
     ofstream fileScore("score.txt", ios::app);
     fileScore<<username<<": "<<score<<endl;
 
-    if(score == 10){
+    if(score == 100){
         cout<<" GOLD BADGE!!"<<endl;
-    }else if(score == 8){
+    }else if(score >= 95 && score < 100){
         cout<<" SILVER BADGE!!"<<endl;
-    }else if(score == 6){
+    }else if(score >= 90 && score <95){
         cout<<" BRONZE BADGE!!"<<endl;
     }else{
         cout<<" NO BADGE!"<<endl;
@@ -56,6 +56,10 @@ void quiz(string username){
 
 void leaderboard(){
     ifstream file("score.txt");
+
+    if(!file){
+        cout<<"No Score Found!";
+    }
 
     string username;
     int score;
