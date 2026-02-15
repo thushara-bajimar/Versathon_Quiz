@@ -3,14 +3,14 @@ Option 1: A type of hardware
 Option 2: A computer part
 Option 3: A language used to give instructions to a computer
 Option 4: A storage device
-Answer: 3
+3
 
 Question: What is a variable used for?
 Option 1: Repeating code
 Option 2: Storing data
 Option 3: Ending a program
 Option 4: Printing output
-Answer: 2
+2
 
 
 Question: What is used to repeat a block of code?
@@ -18,55 +18,55 @@ Option 1: Loop
 Option 2: Variable
 Option 3: Comment
 Option 4: Operator
-Answer: 1
+1
 
 Question: What is an algorithm?
 Option 1: A storage unit
 Option 2: A computer device
 Option 3: A programming language
 Option 4: A step-by-step procedure to solve a problem
-Answer: 4
+4
 
 Question: What is used to store numbers in a program?
 Option 1: Variable
 Option 2: Loop
 Option 3: Comment
 Option 4: Operator
-Answer: 1
+1
 
 Question: Which statement is used for decision making?
 Option 1: loop
 Option 2: print
 Option 3: if
 Option 4: data
-Answer: 3 
+3 
 
 Question: What is a loop used for?
 Option 1: Repeating instructions
 Option 2: Storing images
 Option 3: Turning off computer
 Option 4: Printing output
-Answer: 1
+1
 
 Question: What is debugging?
 Option 1: Designing hardware
 Option 2: Writing new code
 Option 3: Installing software
 Option 4: Removing errors from a program
-Answer: 4
+4
 
 Question: Which symbol is used for single-line comments in C++?
 Option 1: //
 Option 2: /* */
 Option 3: #
 Option 4: <!-- -->
-Answer: 1
+1
 
 Question: What does IDE stand for?
 Option 1: Integrated Development Environment
 Option 2: Internal Data Engine
 Option 3: Input Data Element
 Option 4: Integrated Device Equipment 
-Answer: 2
+2
 
 
