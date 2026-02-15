@@ -44,9 +44,9 @@ void quiz(string username){
 
     if(score == 100){
         cout<<" GOLD BADGE!!"<<endl;
-    }else if(score >= 95 && score < 100){
+    }else if(score >= 90 && score < 100){
         cout<<" SILVER BADGE!!"<<endl;
-    }else if(score >= 90 && score <95){
+    }else if(score >= 80 && score <90){
         cout<<" BRONZE BADGE!!"<<endl;
     }else{
         cout<<" NO BADGE!"<<endl;
