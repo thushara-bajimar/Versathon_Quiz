@@ -1,58 +1,58 @@
-Question: What is a programming language?
+1.Question: What is a programming language?
 A type of hardware 
 A computer part
 A language used to give instructions to a computer
 A storage device
 3
-Question: What is a variable used for?
+2.Question: What is a variable used for?
 Repeating code
 Storing data
 Ending a program
 Printing output
 2
-Question: What is used to repeat a block of code?
+3.Question: What is used to repeat a block of code?
 Loop
 Variable
 Comment
 Operator
 1
-Question: What is an algorithm?
+4.Question: What is an algorithm?
 A storage unit
 A computer device
 A programming language
 A step-by-step procedure to solve a problem
 4
-Question: What is used to store numbers in a program?
+5.Question: What is used to store numbers in a program?
 Variable
 Loop
 Comment
 Operator
 1
-Question: Which statement is used for decision making?
+6.Question: Which statement is used for decision making?
 loop
 Print
 if
 data
 3 
-Question: What is a loop used for?
+7.Question: What is a loop used for?
 Repeating instructions
 Storing images
 Turning off computer
 Printing output
 1
-Question: What is debugging?
+8.Question: What is debugging?
 Designing hardware
 Writing new code
 Installing software
 Removing errors from a program
 4
-Question: Which symbol is used for single-line comments in C++?
+9.Question: Which symbol is used for single-line comments in C++?
 //
 /* */
 #
 <!-- -->
 1
-Question: What does IDE stand for?
+10.Question: What does IDE stand for?
 Integrated Development Environment
 Internal Data Engine
 Input Data Element
